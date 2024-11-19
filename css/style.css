@@ -36,11 +36,11 @@
   --font-size-6: 0.875rem;
 
   /* Spacing */
-  --spacint-1: 1rem;
-  --spacint-2: 2rem;
-  --spacint-3: 2.5rem;
-  --spacint-4: 3rem;
-  --spacint-5: 4rem;
+  --spacing-1: 1rem;
+  --spacing-2: 2rem;
+  --spacing-3: 2.5rem;
+  --spacing-4: 3rem;
+  --spacing-5: 4rem;
 
 }
 
@@ -64,4 +64,71 @@ body {
 
 .font-weight-black {
   font-weight: var(--font-weight-black);
+}
+
+/* Layout */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-1);
+}
+
+
+/* Header */
+.header {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--font-weight-black);
+  height: 4.5rem;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+
+}
+
+.nav__img {
+  height: 3.5rem; 
+  width: auto; /* 비율 유지를 위해 auto로 변경 */
+  object-fit: contain; /* cover 대신 contain으로 변경해 전체 이미지가 보이도록 */
+  margin: 0.5rem;
+}
+
+.nav__brand {
+  font-size: var(--font-size-4);
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  margin-left: var(--spacing-3);
+}
+
+.nav__link {
+  position: relative;
+}
+
+.active-link::after,
+.nav__link:hover::after {
+  background-color: var(--primary-color);
+  height: 0.18rem;
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 2rem;
 }
