@@ -50,7 +50,7 @@
   </header>
   <main>
     <!-- home -->
-    <section class="home container" id="home">
+    <section class="home container section" id="home">
       <!-- Home data -->
       <div class="home__data">
         <h2 class="home__title">
@@ -81,27 +81,25 @@
     </section>
 
     <!-- About -->
-    <section id="about">
-      <h2>About Me</h2>
-      <div>
+    <section class="section bg-grey-1" id="about">
+      <h2 class="section__title">About Me</h2>
+      <div class="about__container container">
         <!-- profile picture -->
-        <div>
-          <img src="./images/about/about.HEIC" alt="Sejin's profile">
-        </div>
+        <img class="about__img" src="./images/about/about.HEIC" alt="Sejin's profile">
         <!-- introduction -->
-        <div>
-          <h3>Passionate Junior Developer</h3>
-          <p>
+        <div class="about__data">
+          <h3 class="about__subtitle">Passionate Junior Developer</h3>
+          <p class="about__text">
             I'm a junior developer who's passionate about creating meaningful solutions to real-world problems.
-          </p>
+          </p><br>
           <p>
-            What drives me:
-            • Building solutions that enhance user experience
-            • Creating aesthetically pleasing and intuitive interfaces
-            • Learning and adapting to new technologies
-            • Writing clean, maintainable code through refactoring
+            What drives me:<br>
+            • Building solutions that enhance user experience<br>
+            • Creating aesthetically pleasing and intuitive interfaces<br>
+            • Learning and adapting to new technologies<br>
+            • Writing clean, maintainable code through refactoring<br>
             • Collaborating in global, cross-cultural environments
-          </p>
+           </p><br>
           <p>
             My journey in professional development has just begun, but my enthusiasm for learning and problem-solving
             continues to
@@ -113,8 +111,8 @@
     </section>
 
     <!-- skills -->
-    <section id="skill">
-      <h2>Skills</h2>
+    <section class="section" id="skill">
+      <h2 class="section__title">Skills</h2>
 
       <div>
         <!-- tech stack -->
@@ -229,8 +227,8 @@
     </section>
 
     <!-- work -->
-    <section id="work">
-      <h2>Works & Projects</h2>
+    <section class="section" id="work">
+      <h2 class="section__title">Works & Projects</h2>
       <div>
         <a href="https://github.com/SejinPrk/TP-2" target="_blank" title="Salaba">
           <img src="./images/work/Salaba.png" alt="salaba - travel project" />
@@ -243,8 +241,8 @@
       </div>
     </section>
     <!-- contact -->
-    <section id="contact">
-      <h2>Contact</h2>
+    <section class="section" id="contact">
+      <h2 class="section__title">Contact</h2>
       <div>
         <form>
           <input type="text" name="name" placeholder="name" required />
