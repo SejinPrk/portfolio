@@ -417,3 +417,26 @@ body {
   font-size: var(--font-size-6);
   font-weight: var(--font-weight-medium);
 }
+
+/* Floating Button */
+.floating__button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: var(--dark-color);
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--box-shadow-1);
+}
+
+.floating__button:hover {
+  background-color: var(--accent-color);
+  transition: 0.3s;
+}
+
+.floating__button__icon {
+  font-size: 1.2rem;
+}
