@@ -1,11 +1,18 @@
-let greeting = 'Hello, world!';
+function toggleMenu() {
+  const $navMenu = document.getElementById('nav__menu');
+  $navMenu.classList.toggle('show');
+}
 
-console.log(greetting);
+function init() {
+  const $navToggle = document.getElementById('nav-toggle');
+  $navToggle.addEventListener('click', () => {
+    // Menu Toggle
+    toggleMenu();
+  });
 
-let nickname = 'Sejin Park';
-let hobby = ['헬스', '수영'];
-
-let person = {
-  nickname: nickname,
-  hobby: hobby,
+  const $navList = document.querySelectorAll('.nav__link');
+  $navList.forEach((el) => 
+    el.addEventListener('click', toggleMenu));
 };
+
+init();
