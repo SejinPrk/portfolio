@@ -459,7 +459,7 @@ body {
     --font-size-4: 1.25rem;    
     --font-size-5: 0.938rem;
     --font-size-6: 0.75rem;
-    
+
     --header-height: 3rem;
   }
   .nav__toggle {
@@ -483,5 +483,39 @@ body {
   .nav__item {
     margin-left: 0;
     margin-bottom: var(--spacing-4);
+  }
+
+  /* Home */
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .home__social {
+    justify-content: center;
+  }
+  .home__title {
+    margin-top: var(--spacing-3);
+  }
+
+  /* About */
+  .about__container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about__subtitle {
+    margin-top: var(--spacing-2);
+  }
+
+  /* Skills */
+  .skills__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  /* Work */
+  .work__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
