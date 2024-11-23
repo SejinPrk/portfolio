@@ -247,6 +247,10 @@ body {
   background-color: #f6f6f6;
 }
 
+.bg-dark-1 {
+  background-color: var(--dark-color);
+}
+
 /* About */
 .about__container {
   display: flex;
