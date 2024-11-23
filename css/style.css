@@ -86,6 +86,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .nav {
@@ -338,3 +339,25 @@ body {
   border-radius: 0.5rem;
 } */
 
+/* Work */
+.work__container {
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.work__img {
+  width: 100%;
+  transform: 0.5s;
+  display: block;
+}
+
+.work__img:hover {
+  transform: scale(1.05);
+}
+
+.work__link {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow-1);
+}
