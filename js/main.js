@@ -96,3 +96,14 @@ window.addEventListener('DOMContentLoaded', () => {
   sr.reveal('.contact__input', { interval: 200 });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  new TypeIt("#typeit", {
+    startDelay: 1300,
+    waitUntilVisible: true
+  })
+  .type('Welcome to my portfolio!<br />')
+  .type('<strong class="home__title-color">I\'m Sejin</strong> <br />')
+  .delete(11, { delay: 500 })
+  .type('<strong class="home__title-color">Full Stack Developer</strong>')
+  .go();
+});
