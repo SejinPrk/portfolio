@@ -110,9 +110,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // send email
-const contactFormEl = document.getElementById('contactForm');
-
+const $contactForm = document.getElementById('contactForm');
 $contactForm.addEventListener('submit', function(event) {
-  console.dir(event);
-  console.log(event);
-})
+    event.preventDefault();
+    
+    const formData = new FormData($contactForm);
+    const name = formData.get('name');
+    const title = formData.get('title'); 
+    const message = formData.get('message');
+    const to = 'bestsaejin12@gmail.com';
+    
+    location.href = 
+    'mailto:' +
+    encodeURIComponent(to) +
+    '?subject=' +
+    encodeURIComponent(`[${name}님의 문의] ${title}`) + 
+    '&body=' +
+    encodeURIComponent(message);
+});
