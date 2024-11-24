@@ -107,3 +107,12 @@ document.addEventListener('DOMContentLoaded', function() {
   .type('<strong class="home__title-color">Full Stack Developer</strong>')
   .go();
 });
+
+
+// send email
+const contactFormEl = document.getElementById('contactForm');
+
+$contactForm.addEventListener('submit', function(event) {
+  console.dir(event);
+  console.log(event);
+})
